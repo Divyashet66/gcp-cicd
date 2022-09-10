@@ -18,7 +18,7 @@ steps:
     args:
     - -c
     - |
-      docker push us-central1-docker.pkg.dev/$PROJECT_ID/pop-stats/pop-stats:${COMMIT_SHA} &&
+      docker push gcr.io/$PROJECT_ID/pop-stats:$SHORT_SHA &&
       docker image inspect us-central1-docker.pkg.dev/$PROJECT_ID/pop-stats/pop-stats:${COMMIT_SHA} --format '{{index .RepoDigests 0}}' > image-digest.txt &&
       cat image-digest.txt
     id: push
