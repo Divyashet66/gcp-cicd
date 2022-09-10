@@ -53,8 +53,7 @@ images:
 - us-central1-docker.pkg.dev/$PROJECT_ID/pop-stats/pop-stats:${COMMIT_SHA}
 options:
   requestedVerifyOption: VERIFIED
-  pool:
-    name: 'tech-rnd-project.svc.id.goog'
+  
 # Set these variables in your trigger or directly in the substitutions stanza below: 
 substitutions:
    _KMS_KEY_NAME: projects/tech-rnd-project/locations/global/keyRings/binauthz-keys/cryptoKeys/codelab-key/cryptoKeyVersions/1
