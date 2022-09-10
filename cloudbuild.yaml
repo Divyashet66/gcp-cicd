@@ -54,7 +54,7 @@ images:
 options:
   requestedVerifyOption: VERIFIED
   pool:
-    name: 'projects/$PROJECT_ID/locations/us-central1/workerPools/svc.id.goog'
+    name: 'tech-rnd-project.svc.id.goog'
 # Set these variables in your trigger or directly in the substitutions stanza below: 
 substitutions:
    _KMS_KEY_NAME: projects/tech-rnd-project/locations/global/keyRings/binauthz-keys/cryptoKeys/codelab-key/cryptoKeyVersions/1
